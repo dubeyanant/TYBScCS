@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <p>Good morning!</p>
+    <ol type="1">
+      <li>firstOne</li>
+      <li>secondOne</li>
+    </ol>
+    <button onclick="add()">Submit</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      function add() {
+        $("p").append(" Have a nice day.");
+        $("ol").append("<li>anotherOne</li>");
+      }
+    </script>
+  </body>
+</html>
