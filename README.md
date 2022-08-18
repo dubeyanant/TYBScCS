@@ -1,7 +1,5 @@
-# T.Y.B.Sc.(C.S.) (6th sem) (Pune University)
+# T.Y.B.Sc.(C.S.) (Pune University)
 
-Lab-book assignments.
-
-Subject Notes and Question Paper.
+Lab-book assignments, subject notes, question paper and more.
 
 Academic Year : 2021-2022

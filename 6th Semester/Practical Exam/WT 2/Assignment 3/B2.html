@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <style>
+      img {
+        display: block;
+        width: 500px;
+        aspect-ratio: 1;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./unsplash.jpg" id="image" /><br />
+    <button onclick="add()">Submit</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      function add() {
+        $("img").after("Good morning!");
+        $("img").before("Have a nice day.");
+      }
+    </script>
+  </body>
+</html>

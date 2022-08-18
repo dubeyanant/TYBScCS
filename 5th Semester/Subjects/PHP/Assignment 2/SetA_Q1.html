@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <style>
+      [class*="col"] {
+        /* padding: 1rem; */
+        background-color: #3462e0f8;
+        border: 2px solid white;
+        color: white;
+        text-align: center;
+      }
+      /* [class*="row"] {
+        padding: 1rem;
+        background-color: #3462e0f8;
+        border: 2px solid white;
+        color: white;
+        text-align: center;
+      } */
+      /* [class*="con"] {
+        padding: 1rem;
+        background-color: purple;
+        border: 2px solid white;
+        color: white;
+        text-align: center;
+      } */
+      img {
+        display: block;
+        margin-top: 5px;
+      }
+      [class*="col"] {
+        height: fit-content;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>Hello bootstrap world</h1> -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <p>Block 1</p>
+        </div>
+        <div class="col-sm-8">
+          <p>Block 2</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="row">
+            <div class="col-sm" style="height: fit-content">Block 3</div>
+          </div>
+          <div class="row">
+            <div class="col-sm">Block 4</div>
+            <div class="col-sm">Block 5</div>
+          </div>
+        </div>
+        <div class="col-sm-4">Block 6</div>
+        <div class="col-sm-3">
+          <div class="row">
+            <div class="col">Block 7</div>
+          </div>
+          <div class="row">
+            <div class="col">Block 8</div>
+          </div>
+          <div class="row">
+            <div class="col">Block 9</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

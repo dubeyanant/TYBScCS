@@ -1,0 +1,60 @@
+>>plot files
+array = np.random.randint(10, size = (50)) - creates a random array
+plt.show() - shows the graph
+plt.plot(array) - creates a line graph
+df.plot(x = 'Name', y = 'Percentage') - creates a line graph
+plt.scatter(array1, array2) - creates a scatter graph between two array
+plt.hist(array, edgecolor = 'k') - creates a histogram // this
+plt.boxplot(array, vert = False) - create a box plot graph
+plt.pie(marks, labels=subjects, autopct='%1.1f%%') - prints pie chart // this
+plt.bar(subjects, marks) - prints bar graph
+sns.countplot('species', data = df) - prints a bar graph of a column // this
+plt.title("Iris species count") - prints title of the bar graph // this
+
+>>simple functions
+df.head(3) - shows first three entries of a data frame
+df.tail(3) - shows last three entries of a data frame
+df.sample(5) - shows 5 samples from the data frame
+df.shape - display shape of the data frame, used with print
+df.size - display size of the data frame
+df.dtypes - display data types used in the data frame
+df.descirbe() - displays various properties of the data frame
+df['BMI'] = df['Weight(Pounds)'] / (df['Height(Inches)'] * df['Height(Inches)']) - creates a coloumn with a specific formula
+max(df['BMI']) - prints max of a specific column, used with print
+min(df['BMI']) - prints min
+mean(df) - prints mean of all columns of the data frame
+median(df)
+print(max_of_a_column - min_of_a_column) - prints range
+np.histogram(nums, bins) - gives histogram data
+scipy.stats.gmean(df.loc[:,'Maths']) - gives geometric mean of maths column from the data frame
+scipy.stats.hmean(df.loc[:,'Maths']) - gives harmonic mean
+db = preprocessing.Binarizer(threshold = 4).transform(df) - Binarize the data frame
+
+>>complex functions
+data=np.array([2,4,5,6,7,8,9]) - below three prints IQR of the array // this
+q3,q1=np.percentile(data,[75,25])
+print(q3-q1)
+
+from sklearn.preprocessing import OneHotEncoder
+enc = OneHotEncoder(handle_unknown = 'ignore')
+enc_df = pd.DataFrame(enc.fit_transform(df[['Country']]).toarray())
+print(enc_df) - prints one hot encoder
+
+from sklearn.preprocessing import LabelEncoder
+df['Purchased'] = LabelEncoder().fit_transform(df['Purchased'])
+df - prints label encoder
+
+data_scaler = preprocessing.MinMaxScaler(feature_range=(0,1))
+data_scaled = data_scaler.fit_transform(df)
+print(data_scaled.round(2)) - rescale a data frame
+
+print("Initial standard deviation:")
+print(round(df.std(),2))
+
+print("\nStandardized Data:\n",df.round(2))
+
+print("\nScaled standard deviation:")
+print(round(df.std(),2)) - standardise a data frame
+
+dn = preprocessing.normalize(df,norm='l1')
+print(dn.round(2)) - normalise a data frame

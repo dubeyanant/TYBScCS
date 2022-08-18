@@ -1,0 +1,33 @@
+pow(a, b) - gives power of a raised to b
+strlen(str) - gives length of the string str
+in_array(str, arr) - finds every occurance of arr elements in the string str and returns count of occurances
+strtolower(str) - gives lowercase string
+ucwords(str) - gives titlecase string
+str_pad(str, len_of_output_string, pad_with, STR_PAD_BOTH) - returns padded the string
+trim(str) - trims the string of whitespace
+strrev(str) - gives reveresed string
+stripos(str1, str2) - gives position of str2 in str1
+strncmp(str1, str2, n) - compares str1 with str2 till nth index and returns 0 if both the strings are same
+explode(" ", str) - this gives individual words in the string str
+strrpos(str, " ") - this gives the position of last space in the string str
+substr(str1, n) - this gives a substring of string str from position n
+empty(str) - returns true if str is empty
+preg_match(regex, str) - matches pattern with str
+sort(arr) - sorts the array
+count(arr) - counts length of the array
+print_r(arr) - prints array
+array_push(arr, n) - insert n at the end of the array
+array_pop(arr) - removes last element of the array
+array_unshift(arr, n) - insert n at first position in an array
+array_shift(arr) - removes an element from the first position
+array_splice(arr, n, 0, symbol) - inserts symbol at n position of the array arr and shifts the remaining array
+asort(arr) - sorts array
+ksort(arr) - sorts array with key
+arsort(arr) - sorts array in descending order
+krsort(arr) - sorts array in descending order with key
+array_chunk(arr, 1, TRUE) - converts an array into chunks
+array_filter(arr, is_odd) - filters odd elements from the array
+array_merge(arr1, arr2) - merge two arrays
+array_intersect(arr1, arr2) - finds the intersection of the two arrays
+array_unique(arr) - finds unique items from an array, used with array_merge to find union of the array
+array_diff(arr1, arr2) - finds difference between two arrays

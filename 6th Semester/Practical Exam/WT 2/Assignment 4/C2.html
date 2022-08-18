@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <script type="text/javascript">
+      function show_confirm() {
+        var r = confirm("Press a button !");
+        if (r == true) {
+          var i;
+          var mybooks = new Array();
+          mybooks[0] = "Mysql";
+          mybooks[1] = "PHP";
+          mybooks[2] = "Java";
+          for (i = 0; i < mybooks.length; i++) {
+            document.write(mybookks[i] + "<br/>");
+          }
+        } else {
+          alert("Cancel books cannot br displayed !");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input type="button" onclick="show_confirm()" value="List of Books" />
+  </body>
+</html>

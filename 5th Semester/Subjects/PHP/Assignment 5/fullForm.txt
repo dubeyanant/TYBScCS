@@ -1,0 +1,5 @@
+1. CSS = Cascading Style Sheets
+2. HTML = Hyper Text Markup Language
+3. PHP = PHP Hypertext Preprocessor
+4. SQL = Structured Query Language
+5. XML = EXtensible Markup Language

@@ -1,0 +1,28 @@
+//1Ca
+ArrayList<String> names = new ArrayList<String>();
+names.add(in.next());
+Collections.sort(names, Collections.reverseOrder());
+
+//2Ac
+Arrays.sort(args);
+
+//2Ca
+str1.equals(str2);
+
+//4Ab
+ch.append((in.next()).toUpperCase());
+ch1.reverse()
+
+//4Ac
+(c = srcFile.read()) != -1
+desFile.write(c);
+desFile.append("EOF");
+
+//4Ba
+f.getFilePointer < f.length()
+StringTokenizer t = new StringTokenizer(f.readLine(), ",");
+String id = new String(t.nextToken());
+
+//4Cb
+name.length();
+name.charAt(i) == j

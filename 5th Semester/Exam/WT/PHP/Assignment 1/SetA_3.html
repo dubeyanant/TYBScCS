@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <style>
+      table,
+      tr,
+      td {
+        border: 1px solid black;
+      }
+      header,
+      footer {
+        font-size: 30pt;
+        font-weight: bolder;
+        padding: 5px 2px 25px;
+      }
+      #left {
+        width: 150px;
+      }
+
+      #right {
+        width: 250px;
+      }
+
+      .different {
+        padding: 0 20px 100px 0;
+      }
+      span {
+        display: block;
+        margin-top: -25px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td colspan="2">
+          <header>This is a header.</header>
+        </td>
+      </tr>
+      <tr>
+        <td id="left" class="different">
+          Look in the box at the right for some information.
+        </td>
+        <td id="right" class="different">
+          <span>Here is some information.</span>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <footer>This is a footer.</footer>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

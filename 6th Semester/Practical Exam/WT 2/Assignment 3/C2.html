@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <h2>It is a jquery remove() example</h2>
+    <div>
+      <p>JS is designed to work interactively with HTML pages</p>
+    </div>
+    <h3>Learning javascript</h3>
+    <button>Remove div section</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("div").remove();
+        });
+      });
+    </script>
+  </body>
+</html>
